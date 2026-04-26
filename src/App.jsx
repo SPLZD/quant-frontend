@@ -488,7 +488,7 @@ export default function App() {
 
         {/* Tabs */}
         <div className="tabs">
-          {[["US", "🇺🇸 미국 (S&P500)"], ["KR", "🇰🇷 한국 (KOSPI)"]].map(([k, lbl]) => (
+          {[["US", "🇺🇸 미국 (S&P500/NASDAQ)"]].map(([k, lbl]) => (
             <button key={k} className={`tab ${market === k ? "on" : ""}`} onClick={() => setMarket(k)}>{lbl}</button>
           ))}
         </div>
